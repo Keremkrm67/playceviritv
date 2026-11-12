@@ -221,7 +221,7 @@ public class AdbConnectionTests
         Assert.True(installed);
         Assert.Equal("0.9.11", version);
         var grant = tv.OpenedServices.IndexOf("shell:appops set com.playceviri.tv SYSTEM_ALERT_WINDOW allow");
-        var open = tv.OpenedServices.IndexOf("shell:am start -n com.couchsubs.tv/.MainActivity");
+        var open = tv.OpenedServices.IndexOf("shell:am start -n com.playceviri.tv/.MainActivity");
         Assert.True(grant >= 0 && open > grant, string.Join(" | ", tv.OpenedServices));
         Assert.DoesNotContain(tv.OpenedServices, s => s.StartsWith("shell:pm grant"));
     }
@@ -237,7 +237,7 @@ public class AdbConnectionTests
         var (version, installed) = await installer.EnsureInstalledAsync("yok.apk", "0.9.11");
         Assert.Equal("0.9.11", version);
         Assert.False(installed);
-        Assert.Contains("shell:pm grant com.couchsubs.tv android.permission.SYSTEM_ALERT_WINDOW", tv.OpenedServices);
+        Assert.Contains("shell:pm grant com.playceviri.tv android.permission.SYSTEM_ALERT_WINDOW", tv.OpenedServices);
     }
 
     [Fact]
@@ -261,7 +261,7 @@ public class AdbConnectionTests
     public void VersionIsReadFromDumpsys()
     {
         Assert.Equal("0.7.0", AndroidTvInstaller.VersionFromDumpsys("Packages:\n    versionCode=1 minSdk=24\n    versionName=0.7.0\n"));
-        Assert.Null(AndroidTvInstaller.VersionFromDumpsys("Unable to find package: com.couchsubs.tv"));
+        Assert.Null(AndroidTvInstaller.VersionFromDumpsys("Unable to find package: com.playceviri.tv"));
     }
 
     [Fact]
