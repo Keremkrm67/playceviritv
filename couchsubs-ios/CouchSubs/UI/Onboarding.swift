@@ -120,8 +120,12 @@ struct SetupHeader: View {
     }
 }
 
+/// PSN girişi. Sony'nin sayfası Safari'de (sistem tarayıcısı) açılır; giriş bitince açılan sayfanın adresi kopyalanıp
+/// buraya yapıştırılır. Eskiden giriş uygulama içi pencerede kendiliğinden açılıyordu; bazı ağlarda Sony'nin sayfası orada
+/// yüklenmeyip zaman aşımına düşüyordu. O pencere yedek olarak duruyor. PasteButton panoyu izin sorusu çıkarmadan okur.
 struct PSNScreen: View {
     @EnvironmentObject private var model: PhoneModel
+    @Environment(\.openURL) private var openURL
     var onBack: (() -> Void)?
     var onDone: () -> Void
     @State private var showLogin = false
@@ -129,6 +133,8 @@ struct PSNScreen: View {
     @State private var redirected = false
     @State private var working = false
     @State private var error: String?
+    @State private var pasted = ""
+    @State private var browserOpened = false
 
     var body: some View {
         MobileScreen {
@@ -143,24 +149,50 @@ struct PSNScreen: View {
                     .bentoWide()
             }
             if model.accountId != nil { MobilePill(text: String(localized: "Signed in"), dot: true) }
+            if browserOpened {
+                VStack(alignment: .leading, spacing: Mobile.Space.gap) {
+                    Text("2. After signing in, a blank or redirect page opens. Copy the whole address from its address bar and paste it below.")
+                        .font(Mobile.TypeScale.caption).foregroundStyle(Mobile.Palette.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                    TextField("", text: $pasted, prompt: Text(verbatim: "https://remoteplay.dl.playstation.net/…"))
+                        .textFieldStyle(MobileFieldStyle())
+                        .keyboardType(.URL)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
+                        .onSubmit(completePasted)
+                    HStack(spacing: Mobile.Space.gap) {
+                        PasteButton(payloadType: String.self) { strings in
+                            guard let text = strings.first else { return }
+                            Task { @MainActor in
+                                pasted = text.trimmingCharacters(in: .whitespacesAndNewlines)
+                                completePasted()
+                            }
+                        }
+                        .labelStyle(.titleAndIcon)
+                        Button("Complete sign-in", action: completePasted)
+                            .buttonStyle(.mobileSecondary)
+                            .disabled(working || PSNAccount.redirect(fromPasted: pasted) == nil)
+                    }
+                }
+            }
             if working { ProgressView().tint(Mobile.Palette.accent) }
             if let error { MobileNote(text: error) }
         } bottom: {
             Button("Why a second account?") { showWhy = true }.buttonStyle(.mobileGhost)
+            Button("Sign in inside the app instead") {
+                redirected = false
+                showLogin = true
+            }
+            .buttonStyle(.mobileGhost)
+            .disabled(working)
             if model.accountId != nil {
-                Button("Sign in again") {
-                    redirected = false
-                    showLogin = true
-                }
-                .buttonStyle(.mobileSecondary)
+                Button("Sign in again in the browser", action: openBrowser)
+                    .buttonStyle(.mobileSecondary)
                 Button("Continue", action: onDone).buttonStyle(.mobilePrimary)
             } else {
-                Button("Sign in with Sony") {
-                    redirected = false
-                    showLogin = true
-                }
-                .buttonStyle(.mobilePrimary)
-                .disabled(working)
+                Button("Open Sony sign-in in the browser", action: openBrowser)
+                    .buttonStyle(.mobilePrimary)
+                    .disabled(working)
             }
         }
         .sheet(isPresented: $showLogin, onDismiss: {
@@ -185,14 +217,35 @@ struct PSNScreen: View {
         }
     }
 
+    private func openBrowser() {
+        error = nil
+        browserOpened = true
+        RemotePlayLog.write("PSN girişi: Sony sayfası tarayıcıda açıldı")
+        openURL(PSNAccount.authorizeURL)
+    }
+
+    private func completePasted() {
+        guard !working else { return }
+        guard let url = PSNAccount.redirect(fromPasted: pasted) else {
+            error = String(localized: "This is not Sony's sign-in address. After signing in, copy the whole address of the page that opens (it starts with https://remoteplay.dl.playstation.net/) and paste it here.")
+            return
+        }
+        run(url)
+    }
+
     private func received(_ url: URL) {
         redirected = true
         showLogin = false
+        run(url)
+    }
+
+    private func run(_ url: URL) {
         working = true
         error = nil
         Task {
             do {
                 try await model.completePSNLogin(redirect: url)
+                pasted = ""
                 onDone()
             } catch {
                 self.error = error.localizedDescription

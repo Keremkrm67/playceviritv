@@ -203,7 +203,7 @@ public class AdbConnectionTests
         Assert.Equal("0.7.0", version);
         Assert.False(installed);
         // Güncel uygulama da katman izni alır (eski CouchSubs kurmuşsa izin yoktur).
-        Assert.Contains("shell:appops set com.couchsubs.tv SYSTEM_ALERT_WINDOW allow", tv.OpenedServices);
+        Assert.Contains("shell:appops set com.playceviri.tv SYSTEM_ALERT_WINDOW allow", tv.OpenedServices);
     }
 
     [Fact]
@@ -220,7 +220,7 @@ public class AdbConnectionTests
         var (version, installed) = await installer.EnsureInstalledAsync(apk, "0.9.11");
         Assert.True(installed);
         Assert.Equal("0.9.11", version);
-        var grant = tv.OpenedServices.IndexOf("shell:appops set com.couchsubs.tv SYSTEM_ALERT_WINDOW allow");
+        var grant = tv.OpenedServices.IndexOf("shell:appops set com.playceviri.tv SYSTEM_ALERT_WINDOW allow");
         var open = tv.OpenedServices.IndexOf("shell:am start -n com.couchsubs.tv/.MainActivity");
         Assert.True(grant >= 0 && open > grant, string.Join(" | ", tv.OpenedServices));
         Assert.DoesNotContain(tv.OpenedServices, s => s.StartsWith("shell:pm grant"));

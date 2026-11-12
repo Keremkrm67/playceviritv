@@ -60,7 +60,7 @@ public static class PsnAccount
     /// sıfırlanıp yeniden giriş yapılınca eski oturumun çerezleri gönderilmesin.</summary>
     private static readonly HttpClient SharedClient = new(new SocketsHttpHandler { UseCookies = false }) { Timeout = TimeSpan.FromSeconds(30) };
 
-    /// <summary>Uygulama içi tarayıcıda (WebView2) açılacak Sony giriş sayfası.</summary>
+    /// <summary>Sony giriş sayfası: sistem tarayıcısında (varsayılan) ya da uygulama içi pencerede (WebView2) açılır.</summary>
     public static Uri AuthorizeUrl { get; } = new("https://auth.api.sonyentertainmentnetwork.com/2.0/oauth/authorize?" + Query(
     [
         ("service_entity", "urn:service-entity:psn"),
@@ -89,6 +89,38 @@ public static class PsnAccount
         var code = QueryValue(url, "error_code");
         return error + (string.IsNullOrEmpty(description) ? "" : $": {description}") + (string.IsNullOrEmpty(code) ? "" : $" ({code})");
     }
+
+    /// <summary>Tarayıcıdan kopyalanıp yapıştırılan metinden yönlendirme adresi. Kullanıcı adresin tamamını, başında/sonunda
+    /// boşluk ya da tırnakla, metnin içinde (ör. "Adres: https://...") ya da yalnız "code=..." kısmını yapıştırabilir.
+    /// Kod da Sony hatası da yoksa null.</summary>
+    public static Uri? RedirectFromPasted(string? pasted)
+    {
+        if (string.IsNullOrWhiteSpace(pasted)) return null;
+        var text = pasted.Trim().Trim('"', '\'', '<', '>');
+        var start = text.IndexOf(RedirectPrefix, StringComparison.OrdinalIgnoreCase);
+        if (start >= 0)
+        {
+            var end = start;
+            while (end < text.Length && !char.IsWhiteSpace(text[end]) && text[end] is not ('"' or '\'' or '<' or '>')) end++;
+            text = RedirectPrefix + text[(start + RedirectPrefix.Length)..end];
+        }
+        else if (text.Contains("://", StringComparison.Ordinal))
+        {
+            return null;
+        }
+        else
+        {
+            // Yalnız sorgu kısmı ("?code=..." / "code=...") ya da çıplak kod.
+            text = text.TrimStart('?');
+            text = $"{RedirectPrefix}?{(text.Contains('=') ? text : "code=" + text)}";
+        }
+        if (!Uri.TryCreate(text, UriKind.Absolute, out var uri)) return null;
+        return CodeFromRedirect(uri) is { Length: > 0 } || ErrorFromRedirect(uri) is not null ? uri : null;
+    }
+
+    /// <summary>Panoda Sony'nin yönlendirme adresi var mı (kodlu ya da hatalı); giriş adımı bunu kendiliğinden doldurur.</summary>
+    public static bool LooksLikeRedirect(string? text) =>
+        text is not null && text.Contains(RedirectPrefix, StringComparison.OrdinalIgnoreCase) && RedirectFromPasted(text) is not null;
 
     private static bool IsRedirect(Uri url) => url.IsAbsoluteUri && url.AbsoluteUri.StartsWith(RedirectPrefix, StringComparison.Ordinal);
 

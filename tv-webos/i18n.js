@@ -5,9 +5,9 @@
 
   var TEXTS = {
     tr: {
-      waiting: 'Bilgisayarınızda CouchSubs uygulamasını açın.',
+      waiting: 'Bilgisayarınızda PlayCeviri TV uygulamasını açın.',
       waitingHint: 'Uygulama bu TV\'yi bulup altyazıları buraya gönderecek.',
-      panelTitle: 'CouchSubs',
+      panelTitle: 'PlayCeviri TV',
       hdmi: 'HDMI',
       lastSubtitle: 'Son altyazı',
       diagnostics: 'Tanı',
@@ -36,9 +36,9 @@
       sourceSwitchClose: 'Kapatmak için Tamam ya da Geri.'
     },
     en: {
-      waiting: 'Open the CouchSubs app on your computer.',
+      waiting: 'Open the PlayCeviri TV app on your computer.',
       waitingHint: 'The app will find this TV and send subtitles here.',
-      panelTitle: 'CouchSubs',
+      panelTitle: 'PlayCeviri TV',
       hdmi: 'HDMI',
       lastSubtitle: 'Last subtitle',
       diagnostics: 'Diagnostics',

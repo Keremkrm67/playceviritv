@@ -214,13 +214,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "If the TV keeps switching to HDMI 1 or another source while the CouchSubs TV app is open, turn off Anynet+ (HDMI-CEC) and Auto Source Switching on the TV: Settings › All Settings › Connection › External Device Manager."
+            "value": "If the TV keeps switching to HDMI 1 or another source while the PlayCeviri TV app is open, turn off Anynet+ (HDMI-CEC) and Auto Source Switching on the TV: Settings › All Settings › Connection › External Device Manager."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs TV uygulaması açıkken TV sürekli HDMI 1'e ya da başka bir kaynağa geçiyorsa TV'de Ayarlar › Tüm Ayarlar › Bağlantı › Harici Cihaz Yöneticisi altında Anynet+ (HDMI-CEC) ve Otomatik Kaynak Değiştirme'yi kapatın."
+            "value": "PlayCeviri TV uygulaması açıkken TV sürekli HDMI 1'e ya da başka bir kaynağa geçiyorsa TV'de Ayarlar › Tüm Ayarlar › Bağlantı › Harici Cihaz Yöneticisi altında Anynet+ (HDMI-CEC) ve Otomatik Kaynak Değiştirme'yi kapatın."
           }
         }
       }
@@ -358,13 +358,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "A new version of CouchSubs is available: %@"
+            "value": "A new version of PlayCeviri TV is available: %@"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs'ın yeni sürümü çıktı: %@"
+            "value": "PlayCeviri TV'nin yeni sürümü çıktı: %@"
           }
         }
       }
@@ -390,13 +390,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "About CouchSubs"
+            "value": "About PlayCeviri TV"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs Hakkında"
+            "value": "PlayCeviri TV Hakkında"
           }
         }
       }
@@ -454,13 +454,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "An LG TV with the CouchSubs TV app"
+            "value": "An LG TV with the PlayCeviri TV app"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs TV uygulaması kurulu bir LG TV"
+            "value": "PlayCeviri TV uygulaması kurulu bir LG TV"
           }
         }
       }
@@ -774,13 +774,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs"
+            "value": "PlayCeviri TV"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs"
+            "value": "PlayCeviri TV"
           }
         }
       }
@@ -790,13 +790,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs TV app"
+            "value": "PlayCeviri TV app"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs TV uygulaması"
+            "value": "PlayCeviri TV uygulaması"
           }
         }
       }
@@ -806,13 +806,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs extends Developer Mode by itself each time you use it."
+            "value": "PlayCeviri TV extends Developer Mode by itself each time you use it."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs, geliştirici modunun süresini her kullanışınızda kendisi uzatır."
+            "value": "PlayCeviri TV, geliştirici modunun süresini her kullanışınızda kendisi uzatır."
           }
         }
       }
@@ -822,13 +822,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs is not affiliated with Sony Interactive Entertainment. PlayStation and PS5 are trademarks of Sony Interactive Entertainment Inc."
+            "value": "PlayCeviri TV is not affiliated with Sony Interactive Entertainment. PlayStation and PS5 are trademarks of Sony Interactive Entertainment Inc."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs, Sony Interactive Entertainment ile bağlantılı değildir. PlayStation ve PS5, Sony Interactive Entertainment Inc.'in ticari markalarıdır."
+            "value": "PlayCeviri TV, Sony Interactive Entertainment ile bağlantılı değildir. PlayStation ve PS5, Sony Interactive Entertainment Inc.'in ticari markalarıdır."
           }
         }
       }
@@ -838,13 +838,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs reads the English subtitles of your PS5 games and shows a Turkish translation on your TV, on top of the game. You keep playing on the TV with your own controller."
+            "value": "PlayCeviri TV reads the English subtitles of your PS5 games and shows a Turkish translation on your TV, on top of the game. You keep playing on the TV with your own controller."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs, PS5 oyunlarınızın İngilizce altyazısını okur ve Türkçesini TV'de oyunun üstünde gösterir. Siz TV'de kendi kolunuzla oynamaya devam edersiniz."
+            "value": "PlayCeviri TV, PS5 oyunlarınızın İngilizce altyazısını okur ve Türkçesini TV'de oyunun üstünde gösterir. Siz TV'de kendi kolunuzla oynamaya devam edersiniz."
           }
         }
       }
@@ -854,13 +854,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs translates on this computer, without the internet. The English–Turkish model (about 530 MB) is downloaded once and kept on this computer."
+            "value": "PlayCeviri TV translates on this computer, without the internet. The English–Turkish model (about 530 MB) is downloaded once and kept on this computer."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs çeviriyi bu bilgisayarda, internetsiz yapar. İngilizce–Türkçe model (yaklaşık 530 MB) bir kez indirilir ve bu bilgisayarda kalır."
+            "value": "PlayCeviri TV çeviriyi bu bilgisayarda, internetsiz yapar. İngilizce–Türkçe model (yaklaşık 530 MB) bir kez indirilir ve bu bilgisayarda kalır."
           }
         }
       }
@@ -870,13 +870,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs watches the game through Remote Play. If it used your own account, the PS5 would turn off your controller. With a second account you keep playing undisturbed."
+            "value": "PlayCeviri TV watches the game through Remote Play. If it used your own account, the PS5 would turn off your controller. With a second account you keep playing undisturbed."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs oyunu Uzaktan Oynatma ile izler. Kendi hesabınızı kullansaydı PS5 kolunuzu kapatırdı. İkinci bir hesapla oyununuz hiç bölünmez."
+            "value": "PlayCeviri TV oyunu Uzaktan Oynatma ile izler. Kendi hesabınızı kullansaydı PS5 kolunuzu kapatırdı. İkinci bir hesapla oyununuz hiç bölünmez."
           }
         }
       }
@@ -886,13 +886,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs will send a sample subtitle to your TV. It should appear at the bottom of the screen, on top of the game."
+            "value": "PlayCeviri TV will send a sample subtitle to your TV. It should appear at the bottom of the screen, on top of the game."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs TV'nize örnek bir altyazı gönderecek. Ekranın altında, oyunun üstünde görünmeli."
+            "value": "PlayCeviri TV'nize örnek bir altyazı gönderecek. Ekranın altında, oyunun üstünde görünmeli."
           }
         }
       }
@@ -982,13 +982,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Developer Mode: %lld hours left. CouchSubs extends it by itself each time you use it."
+            "value": "Developer Mode: %lld hours left. PlayCeviri TV extends it by itself each time you use it."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Geliştirici modu: %lld saat kaldı. CouchSubs süreyi her kullanışınızda kendisi uzatır."
+            "value": "Geliştirici modu: %lld saat kaldı. PlayCeviri TV süreyi her kullanışınızda kendisi uzatır."
           }
         }
       }
@@ -1158,13 +1158,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Draw the area to translate, for example a quest panel. While you play, press its key (Num 1, 2 or 3, or Ctrl+Shift+1, 2 or 3) to read and translate it once. Choose where the result shows. It works even when CouchSubs is in the background."
+            "value": "Draw the area to translate, for example a quest panel. While you play, press its key (Num 1, 2 or 3, or Ctrl+Shift+1, 2 or 3) to read and translate it once. Choose where the result shows. It works even when PlayCeviri TV is in the background."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Çevrilecek alanı çizin (ör. görev paneli). Oynarken kendi tuşuna (Num 1, 2 ya da 3; ya da Ctrl+Shift+1, 2 ya da 3) basınca bu alan bir kez okunup çevrilir. Sonucun nerede görüneceğini seçin. CouchSubs arka plandayken de çalışır."
+            "value": "Çevrilecek alanı çizin (ör. görev paneli). Oynarken kendi tuşuna (Num 1, 2 ya da 3; ya da Ctrl+Shift+1, 2 ya da 3) basınca bu alan bir kez okunup çevrilir. Sonucun nerede görüneceğini seçin. PlayCeviri TV arka plandayken de çalışır."
           }
         }
       }
@@ -1318,13 +1318,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "If Windows asks whether CouchSubs may use the network, allow it for private networks."
+            "value": "If Windows asks whether PlayCeviri TV may use the network, allow it for private networks."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Windows, CouchSubs'ın ağı kullanmasına izin verip vermeyeceğinizi sorarsa özel ağlar için izin verin."
+            "value": "Windows, PlayCeviri TV'nin ağı kullanmasına izin verip vermeyeceğinizi sorarsa özel ağlar için izin verin."
           }
         }
       }
@@ -1334,13 +1334,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "If you don't see it, make sure the CouchSubs TV app is open and connect the TV again."
+            "value": "If you don't see it, make sure the PlayCeviri TV app is open and connect the TV again."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Görmüyorsanız CouchSubs TV uygulamasının açık olduğundan emin olun ve TV'yi yeniden bağlayın."
+            "value": "Görmüyorsanız PlayCeviri TV uygulamasının açık olduğundan emin olun ve TV'yi yeniden bağlayın."
           }
         }
       }
@@ -1398,13 +1398,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Install the CouchSubs TV app on this TV using the guide and open it. It finds this computer by itself."
+            "value": "Install the PlayCeviri TV app on this TV using the guide and open it. It finds this computer by itself."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs TV uygulamasını rehberdeki gibi bu TV'ye kurup açın. Uygulama bu bilgisayarı kendisi bulur."
+            "value": "PlayCeviri TV uygulamasını rehberdeki gibi bu TV'ye kurup açın. Uygulama bu bilgisayarı kendisi bulur."
           }
         }
       }
@@ -2502,13 +2502,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sign in to PlayStation Network with the second account you just created. Your password goes directly to Sony; CouchSubs only keeps the account ID."
+            "value": "Sign in to PlayStation Network with the second account you just created. Your password goes directly to Sony; PlayCeviri TV only keeps the account ID."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Az önce açtığınız ikinci hesapla PlayStation Network'e giriş yapın. Şifreniz doğrudan Sony'ye gider; CouchSubs yalnızca hesap kimliğini saklar."
+            "value": "Az önce açtığınız ikinci hesapla PlayStation Network'e giriş yapın. Şifreniz doğrudan Sony'ye gider; PlayCeviri TV yalnızca hesap kimliğini saklar."
           }
         }
       }
@@ -2934,13 +2934,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The PS5 did not recognise this account. Get the code from the PS5 user signed in with the account you used in CouchSubs, or sign in again with that user's account."
+            "value": "The PS5 did not recognise this account. Get the code from the PS5 user signed in with the account you used in PlayCeviri TV, or sign in again with that user's account."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "PS5 bu hesabı tanımadı. Kodu, CouchSubs'ta giriş yaptığınız hesapla oturum açmış PS5 kullanıcısından alın ya da bir önceki adımda o kullanıcının hesabıyla yeniden giriş yapın."
+            "value": "PS5 bu hesabı tanımadı. Kodu, PlayCeviri TV'de giriş yaptığınız hesapla oturum açmış PS5 kullanıcısından alın ya da bir önceki adımda o kullanıcının hesabıyla yeniden giriş yapın."
           }
         }
       }
@@ -3030,13 +3030,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The TV app is not installed. CouchSubs can install it once Developer Mode is on."
+            "value": "The TV app is not installed. PlayCeviri TV can install it once Developer Mode is on."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "TV uygulaması kurulu değil. Geliştirici modu açılınca CouchSubs kendisi kurar."
+            "value": "TV uygulaması kurulu değil. Geliştirici modu açılınca PlayCeviri TV kendisi kurar."
           }
         }
       }
@@ -3046,13 +3046,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The TV app is not installed. CouchSubs installs it once Developer Mode is on."
+            "value": "The TV app is not installed. PlayCeviri TV installs it once Developer Mode is on."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "TV uygulaması kurulu değil. Geliştirici modu açılınca CouchSubs kendisi kurar."
+            "value": "TV uygulaması kurulu değil. Geliştirici modu açılınca PlayCeviri TV kendisi kurar."
           }
         }
       }
@@ -3062,13 +3062,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The TV app is not installed. CouchSubs installs it over the network once debugging is on."
+            "value": "The TV app is not installed. PlayCeviri TV installs it over the network once debugging is on."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "TV uygulaması kurulu değil. Hata ayıklama açılınca CouchSubs ağ üzerinden kendisi kurar."
+            "value": "TV uygulaması kurulu değil. Hata ayıklama açılınca PlayCeviri TV ağ üzerinden kendisi kurar."
           }
         }
       }
@@ -3302,13 +3302,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The voice engine is missing from the app. Download CouchSubs again."
+            "value": "The voice engine is missing from the app. Download PlayCeviri TV again."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ses motoru uygulamada yok. CouchSubs'ı yeniden indirin."
+            "value": "Ses motoru uygulamada yok. PlayCeviri TV'yi yeniden indirin."
           }
         }
       }
@@ -3350,13 +3350,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "This PS5 system version is not supported yet. Update CouchSubs and try again."
+            "value": "This PS5 system version is not supported yet. Update PlayCeviri TV and try again."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bu PS5 sistem sürümü henüz desteklenmiyor. CouchSubs'ı güncelleyip yeniden deneyin."
+            "value": "Bu PS5 sistem sürümü henüz desteklenmiyor. PlayCeviri TV'yi güncelleyip yeniden deneyin."
           }
         }
       }
@@ -3366,13 +3366,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "This Samsung TV is too old for the CouchSubs TV app (2017 models and later are supported)."
+            "value": "This Samsung TV is too old for the PlayCeviri TV app (2017 models and later are supported)."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bu Samsung TV, CouchSubs TV uygulaması için çok eski (2017 ve sonraki modeller destekleniyor)."
+            "value": "Bu Samsung TV, PlayCeviri TV uygulaması için çok eski (2017 ve sonraki modeller destekleniyor)."
           }
         }
       }
@@ -3548,7 +3548,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "PS5'i açın. CouchSubs'ta giriş yaptığınız ikinci hesabın kullanıcısıyla Ayarlar › Sistem › Uzaktan Oynatma › Cihazı Eşleştir'i açın ve orada görünen 8 haneli kodu girin."
+            "value": "PS5'i açın. PlayCeviri TV'de giriş yaptığınız ikinci hesabın kullanıcısıyla Ayarlar › Sistem › Uzaktan Oynatma › Cihazı Eşleştir'i açın ve orada görünen 8 haneli kodu girin."
           }
         }
       }
@@ -3558,13 +3558,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Turn on the TV. When you press Connect, the TV asks for permission once — accept it with the remote. If the CouchSubs TV app is missing, this screen helps you install it."
+            "value": "Turn on the TV. When you press Connect, the TV asks for permission once — accept it with the remote. If the PlayCeviri TV app is missing, this screen helps you install it."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "TV'yi açın. Bağlan'a bastığınızda TV bir kez izin ister, kumandayla onaylayın. CouchSubs TV uygulaması kurulu değilse bu ekran kurmanıza yardım eder."
+            "value": "TV'yi açın. Bağlan'a bastığınızda TV bir kez izin ister, kumandayla onaylayın. PlayCeviri TV uygulaması kurulu değilse bu ekran kurmanıza yardım eder."
           }
         }
       }
@@ -3718,13 +3718,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Welcome to CouchSubs"
+            "value": "Welcome to PlayCeviri TV"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs'a hoş geldiniz"
+            "value": "PlayCeviri TV'ye hoş geldiniz"
           }
         }
       }
@@ -4374,13 +4374,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Allow CouchSubs through Windows Firewall"
+            "value": "Allow PlayCeviri TV through Windows Firewall"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs'a Windows Güvenlik Duvarı'nda izin ver"
+            "value": "PlayCeviri TV'ye Windows Güvenlik Duvarı'nda izin ver"
           }
         }
       }
@@ -4390,13 +4390,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Windows Firewall now allows CouchSubs."
+            "value": "Windows Firewall now allows PlayCeviri TV."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Windows Güvenlik Duvarı artık CouchSubs'a izin veriyor."
+            "value": "Windows Güvenlik Duvarı artık PlayCeviri TV'ye izin veriyor."
           }
         }
       }
@@ -4470,13 +4470,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs needs incoming connections from the PS5 and the TV. Windows asks for permission once."
+            "value": "PlayCeviri TV needs incoming connections from the PS5 and the TV. Windows asks for permission once."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs'ın PS5'ten ve TV'den gelen bağlantıları alabilmesi gerekiyor. Windows bir kez izin ister."
+            "value": "PlayCeviri TV'nin PS5'ten ve TV'den gelen bağlantıları alabilmesi gerekiyor. Windows bir kez izin ister."
           }
         }
       }
@@ -4486,13 +4486,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Allow CouchSubs, then open Pair Device again on the PS5 and enter the new code."
+            "value": "Allow PlayCeviri TV, then open Pair Device again on the PS5 and enter the new code."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs'a izin verin, sonra PS5'te Cihazı Eşleştir'i yeniden açın ve yeni kodu girin."
+            "value": "PlayCeviri TV'ye izin verin, sonra PS5'te Cihazı Eşleştir'i yeniden açın ve yeni kodu girin."
           }
         }
       }
@@ -4598,13 +4598,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Free. The translation model built into CouchSubs runs on this computer; subtitle text never leaves it."
+            "value": "Free. The translation model built into PlayCeviri TV runs on this computer; subtitle text never leaves it."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ücretsiz. CouchSubs'ın kendi çeviri modeli bu bilgisayarda çalışır; altyazı metni bilgisayardan hiç çıkmaz."
+            "value": "Ücretsiz. PlayCeviri TV'nin kendi çeviri modeli bu bilgisayarda çalışır; altyazı metni bilgisayardan hiç çıkmaz."
           }
         }
       }
@@ -5414,13 +5414,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs will show a sample subtitle on this computer's screen, at the bottom."
+            "value": "PlayCeviri TV will show a sample subtitle on this computer's screen, at the bottom."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs bu bilgisayarın ekranında, altta örnek bir altyazı gösterecek."
+            "value": "PlayCeviri TV bu bilgisayarın ekranında, altta örnek bir altyazı gösterecek."
           }
         }
       }
@@ -5494,13 +5494,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Open CouchSubs"
+            "value": "Open PlayCeviri TV"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs'ı aç"
+            "value": "PlayCeviri TV'yi aç"
           }
         }
       }
@@ -5622,13 +5622,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs sends the English subtitles it reads to a shared pool, anonymously, to make better Turkish translations for everyone. You can turn this off in Settings."
+            "value": "PlayCeviri TV sends the English subtitles it reads to a shared pool, anonymously, to make better Turkish translations for everyone. You can turn this off in Settings."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs, okuduğu İngilizce altyazıları anonim olarak ortak havuza gönderir; böylece herkes için daha iyi Türkçe çeviriler hazırlanır. Ayarlar'dan kapatabilirsiniz."
+            "value": "PlayCeviri TV, okuduğu İngilizce altyazıları anonim olarak ortak havuza gönderir; böylece herkes için daha iyi Türkçe çeviriler hazırlanır. Ayarlar'dan kapatabilirsiniz."
           }
         }
       }
@@ -5638,13 +5638,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "No PS5 found. Make sure it is on and on the same network, or enter its IP address. CouchSubs must also be allowed in System Settings › Privacy & Security › Local Network."
+            "value": "No PS5 found. Make sure it is on and on the same network, or enter its IP address. PlayCeviri TV must also be allowed in System Settings › Privacy & Security › Local Network."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "PS5 bulunamadı. Açık ve aynı ağda olduğundan emin olun ya da IP adresini girin. CouchSubs'ın Sistem Ayarları › Gizlilik ve Güvenlik › Yerel Ağ'da da açık olması gerekir."
+            "value": "PS5 bulunamadı. Açık ve aynı ağda olduğundan emin olun ya da IP adresini girin. PlayCeviri TV'nin Sistem Ayarları › Gizlilik ve Güvenlik › Yerel Ağ'da da açık olması gerekir."
           }
         }
       }
@@ -5718,13 +5718,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "macOS blocked the connection to the local network. Turn on CouchSubs in System Settings › Privacy & Security › Local Network, then enter a new code."
+            "value": "macOS blocked the connection to the local network. Turn on PlayCeviri TV in System Settings › Privacy & Security › Local Network, then enter a new code."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "macOS yerel ağ bağlantısını engelledi. Sistem Ayarları › Gizlilik ve Güvenlik › Yerel Ağ'da CouchSubs'ı açın, sonra yeni kodu girin."
+            "value": "macOS yerel ağ bağlantısını engelledi. Sistem Ayarları › Gizlilik ve Güvenlik › Yerel Ağ'da PlayCeviri TV'yi açın, sonra yeni kodu girin."
           }
         }
       }
@@ -5830,13 +5830,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sony's answer could not be read. Sign in again; if it keeps happening, update CouchSubs."
+            "value": "Sony's answer could not be read. Sign in again; if it keeps happening, update PlayCeviri TV."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sony'nin yanıtı okunamadı. Yeniden giriş yapın; sürerse CouchSubs'ı güncelleyin."
+            "value": "Sony'nin yanıtı okunamadı. Yeniden giriş yapın; sürerse PlayCeviri TV'yi güncelleyin."
           }
         }
       }
@@ -5990,13 +5990,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "If the PS5 picture stays black inside the CouchSubs TV app, choose Overlay: the TV shows the PS5 on its own HDMI input and the subtitles appear on top. If the picture never arrives, the TV app switches to Overlay by itself."
+            "value": "If the PS5 picture stays black inside the PlayCeviri TV app, choose Overlay: the TV shows the PS5 on its own HDMI input and the subtitles appear on top. If the picture never arrives, the TV app switches to Overlay by itself."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "PS5 görüntüsü CouchSubs TV uygulamasının içinde siyah kalıyorsa Katman'ı seçin: TV, PS5'i kendi HDMI girişinde gösterir, altyazı görüntünün üstünde çıkar. Görüntü hiç gelmezse TV uygulaması kendiliğinden Katman'a geçer."
+            "value": "PS5 görüntüsü PlayCeviri TV uygulamasının içinde siyah kalıyorsa Katman'ı seçin: TV, PS5'i kendi HDMI girişinde gösterir, altyazı görüntünün üstünde çıkar. Görüntü hiç gelmezse TV uygulaması kendiliğinden Katman'a geçer."
           }
         }
       }
@@ -6054,13 +6054,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "A CouchSubs TV app signed on another computer is still on the TV and could not be removed. On the TV, open Apps, select CouchSubs, delete it and try again."
+            "value": "A PlayCeviri TV app signed on another computer is still on the TV and could not be removed. On the TV, open Apps, select PlayCeviri TV, delete it and try again."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "TV'de başka bir bilgisayarda imzalanmış bir CouchSubs uygulaması var ve kaldırılamadı. TV'de Uygulamalar'ı açın, CouchSubs'ı seçip silin ve tekrar deneyin."
+            "value": "TV'de başka bir bilgisayarda imzalanmış bir PlayCeviri TV uygulaması var ve kaldırılamadı. TV'de Uygulamalar'ı açın, PlayCeviri TV'yi seçip silin ve tekrar deneyin."
           }
         }
       }
@@ -6070,13 +6070,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The TV did not accept the signing certificate. Make sure the TV is connected to the internet (it checks the certificate with Samsung) and its date and time are right (Settings › General › System Manager › Time), then try again. CouchSubs gets a new certificate, so you sign in to Samsung once more."
+            "value": "The TV did not accept the signing certificate. Make sure the TV is connected to the internet (it checks the certificate with Samsung) and its date and time are right (Settings › General › System Manager › Time), then try again. PlayCeviri TV gets a new certificate, so you sign in to Samsung once more."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "TV imza sertifikasını kabul etmedi. TV'nin internete bağlı olduğundan (sertifikayı Samsung'a sorar) ve tarih ile saatinin doğru olduğundan emin olun (Ayarlar › Genel › Sistem Yöneticisi › Saat), sonra tekrar deneyin. CouchSubs yeni sertifika alacağı için Samsung hesabınızla bir kez daha giriş yaparsınız."
+            "value": "TV imza sertifikasını kabul etmedi. TV'nin internete bağlı olduğundan (sertifikayı Samsung'a sorar) ve tarih ile saatinin doğru olduğundan emin olun (Ayarlar › Genel › Sistem Yöneticisi › Saat), sonra tekrar deneyin. PlayCeviri TV yeni sertifika alacağı için Samsung hesabınızla bir kez daha giriş yaparsınız."
           }
         }
       }
@@ -6102,13 +6102,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The TV refuses CouchSubs because an earlier CouchSubs is still registered on it (Tizen error 118, -22), even if it no longer appears among the apps. If CouchSubs is among the TV's apps, delete it there and try again. Otherwise reset Smart Hub (Settings › Support › Device Care › Self Diagnosis › Reset Smart Hub; menu names differ a little by model) and try again. Resetting Smart Hub also removes the other apps you downloaded."
+            "value": "The TV refuses PlayCeviri TV because an earlier PlayCeviri TV is still registered on it (Tizen error 118, -22), even if it no longer appears among the apps. If PlayCeviri TV is among the TV's apps, delete it there and try again. Otherwise reset Smart Hub (Settings › Support › Device Care › Self Diagnosis › Reset Smart Hub; menu names differ a little by model) and try again. Resetting Smart Hub also removes the other apps you downloaded."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "TV, daha önceki bir CouchSubs'ın kaydı hâlâ durduğu için uygulamayı kabul etmiyor (Tizen hatası 118, -22); uygulama listede görünmese de. CouchSubs TV'nin uygulamaları arasındaysa oradan silip tekrar deneyin. Değilse Smart Hub'ı sıfırlayıp (Ayarlar › Destek › Cihaz Bakımı › Kendi Kendine Tanılama › Smart Hub'ı Sıfırla; menü adları modele göre biraz değişir) tekrar deneyin. Smart Hub'ı sıfırlamak, indirdiğiniz diğer uygulamaları da kaldırır."
+            "value": "TV, daha önceki bir PlayCeviri TV'nin kaydı hâlâ durduğu için uygulamayı kabul etmiyor (Tizen hatası 118, -22); uygulama listede görünmese de. PlayCeviri TV'nin uygulamaları arasındaysa oradan silip tekrar deneyin. Değilse Smart Hub'ı sıfırlayıp (Ayarlar › Destek › Cihaz Bakımı › Kendi Kendine Tanılama › Smart Hub'ı Sıfırla; menü adları modele göre biraz değişir) tekrar deneyin. Smart Hub'ı sıfırlamak, indirdiğiniz diğer uygulamaları da kaldırır."
           }
         }
       }
@@ -6198,13 +6198,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Accept the permission box on the TV with the remote (Allow). CouchSubs waits 60 seconds."
+            "value": "Accept the permission box on the TV with the remote (Allow). PlayCeviri TV waits 60 seconds."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "TV'de çıkan izin kutusunu kumandayla onaylayın (İzin ver). CouchSubs 60 saniye bekler."
+            "value": "TV'de çıkan izin kutusunu kumandayla onaylayın (İzin ver). PlayCeviri TV 60 saniye bekler."
           }
         }
       }
@@ -6214,13 +6214,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The TV's permission box was not accepted within 60 seconds. If no box appeared, open the TV's home screen and press Connect again. If CouchSubs was denied before, allow it in Settings › General › External Device Manager › Device Connection Manager › Device List."
+            "value": "The TV's permission box was not accepted within 60 seconds. If no box appeared, open the TV's home screen and press Connect again. If PlayCeviri TV was denied before, allow it in Settings › General › External Device Manager › Device Connection Manager › Device List."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "TV'deki izin kutusu 60 saniye içinde onaylanmadı. Kutu hiç çıkmadıysa TV'de ana ekranı açıp yeniden Bağlan'a basın. CouchSubs'a daha önce izin verilmediyse Ayarlar › Genel › Harici Aygıt Yöneticisi › Cihaz Bağlantı Yöneticisi › Cihaz Listesi'nden izin verin."
+            "value": "TV'deki izin kutusu 60 saniye içinde onaylanmadı. Kutu hiç çıkmadıysa TV'de ana ekranı açıp yeniden Bağlan'a basın. PlayCeviri TV'ye daha önce izin verilmediyse Ayarlar › Genel › Harici Aygıt Yöneticisi › Cihaz Bağlantı Yöneticisi › Cihaz Listesi'nden izin verin."
           }
         }
       }
@@ -6230,13 +6230,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The TV refused the connection. Allow CouchSubs in Settings › General › External Device Manager › Device Connection Manager › Device List on the TV, then press Connect again."
+            "value": "The TV refused the connection. Allow PlayCeviri TV in Settings › General › External Device Manager › Device Connection Manager › Device List on the TV, then press Connect again."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "TV bağlantıyı reddetti. TV'de Ayarlar › Genel › Harici Aygıt Yöneticisi › Cihaz Bağlantı Yöneticisi › Cihaz Listesi'nden CouchSubs'a izin verip yeniden Bağlan'a basın."
+            "value": "TV bağlantıyı reddetti. TV'de Ayarlar › Genel › Harici Aygıt Yöneticisi › Cihaz Bağlantı Yöneticisi › Cihaz Listesi'nden PlayCeviri TV'ye izin verip yeniden Bağlan'a basın."
           }
         }
       }
@@ -6310,13 +6310,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "To install the TV app for the first time, use CouchSubs on a computer once. After that this phone is enough."
+            "value": "To install the TV app for the first time, use PlayCeviri TV on a computer once. After that this phone is enough."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "TV uygulamasını ilk kez kurmak için bir kez bilgisayardaki CouchSubs'ı kullanın. Sonrasında bu telefon yeterli."
+            "value": "TV uygulamasını ilk kez kurmak için bir kez bilgisayardaki PlayCeviri TV'yi kullanın. Sonrasında bu telefon yeterli."
           }
         }
       }
@@ -6326,13 +6326,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Keep CouchSubs open on the screen while you play. iOS stops the connection when the app goes to the background; the screen stays on while translating."
+            "value": "Keep PlayCeviri TV open on the screen while you play. iOS stops the connection when the app goes to the background; the screen stays on while translating."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oynarken CouchSubs ekranda açık kalsın. iOS, arka plana geçen uygulamanın bağlantısını keser; çeviri sürerken ekran kararmaz."
+            "value": "Oynarken PlayCeviri TV ekranda açık kalsın. iOS, arka plana geçen uygulamanın bağlantısını keser; çeviri sürerken ekran kararmaz."
           }
         }
       }
@@ -6438,13 +6438,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "iOS blocked the connection to the home network. Turn on CouchSubs in Settings › Privacy & Security › Local Network, then enter a new code."
+            "value": "iOS blocked the connection to the home network. Turn on PlayCeviri TV in Settings › Privacy & Security › Local Network, then enter a new code."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "iOS ev ağına bağlantıyı engelledi. Ayarlar › Gizlilik ve Güvenlik › Yerel Ağ'dan CouchSubs'ı açıp yeni kodu girin."
+            "value": "iOS ev ağına bağlantıyı engelledi. Ayarlar › Gizlilik ve Güvenlik › Yerel Ağ'dan PlayCeviri TV'yi açıp yeni kodu girin."
           }
         }
       }
@@ -7718,13 +7718,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Make sure the PS5 is on (not in rest mode) and on the same Wi-Fi, and that CouchSubs is allowed in Settings › Privacy & Security › Local Network. You can also type the PS5's IP address (PS5: Settings › Network › Connection Status)."
+            "value": "Make sure the PS5 is on (not in rest mode) and on the same Wi-Fi, and that PlayCeviri TV is allowed in Settings › Privacy & Security › Local Network. You can also type the PS5's IP address (PS5: Settings › Network › Connection Status)."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "PS5'in açık (dinlenme modunda değil) ve aynı Wi-Fi'da olduğundan, CouchSubs'a Ayarlar › Gizlilik ve Güvenlik › Yerel Ağ'dan izin verildiğinden emin ol. PS5'in IP adresini de yazabilirsin (PS5: Ayarlar › Ağ › Bağlantı Durumu)."
+            "value": "PS5'in açık (dinlenme modunda değil) ve aynı Wi-Fi'da olduğundan, PlayCeviri TV'ye Ayarlar › Gizlilik ve Güvenlik › Yerel Ağ'dan izin verildiğinden emin ol. PS5'in IP adresini de yazabilirsin (PS5: Ayarlar › Ağ › Bağlantı Durumu)."
           }
         }
       }
@@ -7862,13 +7862,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs installed"
+            "value": "PlayCeviri TV installed"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs kurulu"
+            "value": "PlayCeviri TV kurulu"
           }
         }
       }
@@ -7910,13 +7910,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs works with LG (webOS 4+), Samsung (Tizen, 2019+) and Android TV / Google TV. Type the TV's IP address, or choose Android TV: its CouchSubs app finds this phone by itself."
+            "value": "PlayCeviri TV works with LG (webOS 4+), Samsung (Tizen, 2019+) and Android TV / Google TV. Type the TV's IP address, or choose Android TV: its PlayCeviri TV app finds this phone by itself."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs; LG (webOS 4 ve üstü), Samsung (Tizen, 2019 ve sonrası) ve Android TV / Google TV ile çalışır. TV'nin IP adresini yaz ya da Android TV'yi seç: oradaki CouchSubs uygulaması bu telefonu kendisi bulur."
+            "value": "PlayCeviri TV; LG (webOS 4 ve üstü), Samsung (Tizen, 2019 ve sonrası) ve Android TV / Google TV ile çalışır. TV'nin IP adresini yaz ya da Android TV'yi seç: oradaki PlayCeviri TV uygulaması bu telefonu kendisi bulur."
           }
         }
       }
@@ -8145,22 +8145,6 @@
         }
       }
     },
-    "Save": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Save"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kaydet"
-          }
-        }
-      }
-    },
     "Other": {
       "localizations": {
         "en": {
@@ -8262,13 +8246,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs is free and open source (AGPL-3.0). Remote Play uses chiaki-ng (AGPL-3.0)."
+            "value": "PlayCeviri TV is free and open source (AGPL-3.0). Remote Play uses chiaki-ng (AGPL-3.0)."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CouchSubs ücretsiz ve açık kaynaklıdır (AGPL-3.0). Remote Play için chiaki-ng (AGPL-3.0) kullanılır."
+            "value": "PlayCeviri TV ücretsiz ve açık kaynaklıdır (AGPL-3.0). Remote Play için chiaki-ng (AGPL-3.0) kullanılır."
           }
         }
       }
@@ -8438,13 +8422,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "If the Mac App Store version cannot install the TV app, install it once with the GitHub (DMG) version of CouchSubs. After that, this version is enough."
+            "value": "If the Mac App Store version cannot install the TV app, install it once with the GitHub (DMG) version of PlayCeviri TV. After that, this version is enough."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mac App Store sürümü TV uygulamasını kuramıyorsa, TV uygulamasını bir kez CouchSubs'ın GitHub (DMG) sürümüyle kurun. Sonrasında bu sürüm yeter."
+            "value": "Mac App Store sürümü TV uygulamasını kuramıyorsa, TV uygulamasını bir kez PlayCeviri TV'nin GitHub (DMG) sürümüyle kurun. Sonrasında bu sürüm yeter."
           }
         }
       }
@@ -8829,6 +8813,182 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sistemle aynı"
+          }
+        }
+      }
+    },
+    "1. Open Sony's sign-in page in your browser and sign in with the second account.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1. Open Sony's sign-in page in your browser and sign in with the second account."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1. Sony'nin giriş sayfasını tarayıcınızda açın ve ikinci hesapla giriş yapın."
+          }
+        }
+      }
+    },
+    "2. After signing in, a blank or redirect page opens. Copy the whole address from its address bar and paste it below.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2. After signing in, a blank or redirect page opens. Copy the whole address from its address bar and paste it below."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2. Giriş bitince boş ya da \"redirect\" yazan bir sayfa açılır. O sayfanın adres çubuğundaki adresin tamamını kopyalayıp aşağıya yapıştırın."
+          }
+        }
+      }
+    },
+    "Complete sign-in": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete sign-in"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Girişi tamamla"
+          }
+        }
+      }
+    },
+    "Copy link": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy link"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantıyı kopyala"
+          }
+        }
+      }
+    },
+    "Link copied. Paste it into a private (incognito) window if your browser is signed in to your own PSN account.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Link copied. Paste it into a private (incognito) window if your browser is signed in to your own PSN account."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantı kopyalandı. Tarayıcınızda kendi PSN hesabınız açıksa bağlantıyı gizli (incognito) pencereye yapıştırın."
+          }
+        }
+      }
+    },
+    "Open Sony sign-in in the browser": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Sony sign-in in the browser"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sony giriş sayfasını tarayıcıda aç"
+          }
+        }
+      }
+    },
+    "Paste": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paste"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yapıştır"
+          }
+        }
+      }
+    },
+    "Sign in again in the browser": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in again in the browser"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarayıcıda yeniden giriş yap"
+          }
+        }
+      }
+    },
+    "Sign in inside the app instead": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in inside the app instead"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulama içinde giriş yap (yedek)"
+          }
+        }
+      }
+    },
+    "The browser could not be opened. The link was copied; paste it into your browser's address bar.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The browser could not be opened. The link was copied; paste it into your browser's address bar."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarayıcı açılamadı. Bağlantı kopyalandı; tarayıcınızın adres çubuğuna yapıştırın."
+          }
+        }
+      }
+    },
+    "This is not Sony's sign-in address. After signing in, copy the whole address of the page that opens (it starts with https://remoteplay.dl.playstation.net/) and paste it here.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is not Sony's sign-in address. After signing in, copy the whole address of the page that opens (it starts with https://remoteplay.dl.playstation.net/) and paste it here."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu, Sony'nin giriş adresi değil. Giriş bitince açılan sayfanın adresinin tamamını (https://remoteplay.dl.playstation.net/ ile başlar) kopyalayıp buraya yapıştırın."
           }
         }
       }

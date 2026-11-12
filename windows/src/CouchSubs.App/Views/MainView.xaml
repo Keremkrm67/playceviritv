@@ -15,7 +15,7 @@
                     <!-- Koyu temada logonun kenarı zeminden ayrılsın. -->
                     <Border BorderBrush="{DynamicResource borderBrush}" BorderThickness="1" CornerRadius="8.1" />
                 </Grid>
-                <TextBlock Text="CouchSubs" Style="{StaticResource TitleText}" Margin="12,0,0,0" VerticalAlignment="Center" />
+                <TextBlock Text="PlayCeviri TV" Style="{StaticResource TitleText}" Margin="12,0,0,0" VerticalAlignment="Center" />
             </StackPanel>
             <Button HorizontalAlignment="Right" Padding="16,0" ToolTip="{t:T 'Settings'}" Click="OnSettings">
                 <StackPanel Orientation="Horizontal">

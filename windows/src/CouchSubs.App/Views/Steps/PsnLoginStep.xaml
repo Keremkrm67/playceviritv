@@ -9,11 +9,29 @@
         <StackPanel>
             <TextBlock Text="{t:T 'Signed in'}" Style="{StaticResource DoneText}" Margin="0,0,0,12"
                        Visibility="{Binding HasAccount, Converter={StaticResource VisibleIf}}" />
-            <Button x:Name="SignIn" Click="OnSignIn" />
-            <TextBlock x:Name="Error" Style="{StaticResource ErrorText}" Margin="0,12,0,0" />
+            <!-- Giriş sistem tarayıcısında yapılır: uygulama içi pencere bazı ağlarda Sony'nin sayfasını açamayıp zaman aşımına düşüyordu. -->
+            <TextBlock Style="{StaticResource HintText}" TextWrapping="Wrap" Margin="0,0,0,8"
+                       Text="{t:T '1. Open Sony\'s sign-in page in your browser and sign in with the second account.'}" />
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="OpenBrowser" Click="OnOpenBrowser" />
+                <Button x:Name="CopyLink" Content="{t:T 'Copy link'}" Style="{StaticResource SecondaryButton}" Margin="12,0,0,0" Click="OnCopyLink" />
+            </StackPanel>
+            <TextBlock x:Name="Copied" Style="{StaticResource HintText}" TextWrapping="Wrap" Margin="0,6,0,0" Visibility="Collapsed"
+                       Text="{t:T 'Link copied. Paste it into a private (incognito) window if your browser is signed in to your own PSN account.'}" />
+            <TextBlock Style="{StaticResource HintText}" TextWrapping="Wrap" Margin="0,16,0,8"
+                       Text="{t:T '2. After signing in, a blank or redirect page opens. Copy the whole address from its address bar and paste it below.'}" />
+            <TextBox x:Name="Redirect" HorizontalAlignment="Stretch" MaxWidth="560" PreviewKeyDown="OnRedirectKeyDown" TextChanged="OnRedirectChanged" />
+            <StackPanel Orientation="Horizontal" Margin="0,12,0,0">
+                <Button x:Name="Complete" Content="{t:T 'Complete sign-in'}" Style="{StaticResource PrimaryButton}" Click="OnComplete" />
+                <Button x:Name="Paste" Content="{t:T 'Paste'}" Style="{StaticResource SecondaryButton}" Margin="12,0,0,0" Click="OnPaste" />
+            </StackPanel>
+            <TextBlock x:Name="Error" Style="{StaticResource ErrorText}" TextWrapping="Wrap" Margin="0,12,0,0" />
+            <!-- Eski uygulama içi pencere: tarayıcı açılamazsa yedek. -->
+            <Button x:Name="InApp" Content="{t:T 'Sign in inside the app instead'}" Style="{StaticResource SecondaryButton}"
+                    HorizontalAlignment="Left" Margin="0,20,0,0" Click="OnSignInInApp" />
             <!-- Sony girişi açılmıyorsa (ör. servis sağlayıcı engelliyor) hesap kimliği elle yazılır. -->
             <Button x:Name="ShowManual" Content="{t:T 'Enter account ID manually'}" Style="{StaticResource SecondaryButton}"
-                    HorizontalAlignment="Left" Margin="0,20,0,0" Click="OnShowManual" />
+                    HorizontalAlignment="Left" Margin="0,12,0,0" Click="OnShowManual" />
             <StackPanel x:Name="Manual" Margin="0,20,0,0" Visibility="Collapsed">
                 <TextBlock Style="{StaticResource HintText}" TextWrapping="Wrap" Margin="0,0,0,6"
                            Text="{t:T 'If Sony\'s sign-in page does not open (some internet providers block it), enter the second account\'s PSN account ID in base64 (12 characters, e.g. AbCdEfGhIjk=).'}" />

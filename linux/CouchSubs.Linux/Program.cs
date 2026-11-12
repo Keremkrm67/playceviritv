@@ -190,14 +190,9 @@ internal static class Panel
         region is { Top: >= 0, Left: >= 0, Bottom: <= 1, Right: <= 1 } && region.Bottom - region.Top >= 0.05 && region.Right - region.Left >= 0.1;
 
     /// <summary>Kullanıcı adresi boşluklarla ya da yalnız "code=..." kısmıyla yapıştırabilir.</summary>
-    internal static Uri ParseRedirect(string pasted)
-    {
-        pasted = pasted.Trim();
-        if (!pasted.Contains("://", StringComparison.Ordinal))
-            pasted = $"{PsnAccount.RedirectPrefix}?{(pasted.Contains('=') ? pasted.TrimStart('?') : "code=" + pasted)}";
-        return Uri.TryCreate(pasted, UriKind.Absolute, out var uri) ? uri
-            : throw new AppException(AppError.InvalidLogin, AppException.Describe(AppError.InvalidLogin, Program.Text));
-    }
+    internal static Uri ParseRedirect(string pasted) =>
+        PsnAccount.RedirectFromPasted(pasted)
+        ?? throw new AppException(AppError.InvalidLogin, AppException.Describe(AppError.InvalidLogin, Program.Text));
 
     private static Task<IResult> Act(UiThread ui, Action work) => Act(ui, () => { work(); return Task.CompletedTask; });
 

@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Version>0.1.0</Version>
     <Company>Enmera</Company>
-    <Product>CouchSubs</Product>
+    <Product>PlayCeviri TV</Product>
     <Copyright>AGPL-3.0. Uses chiaki-ng (AGPL-3.0).</Copyright>
     <!-- WPF projesi Mac'te de derlenebilsin (çalıştırmak için Windows gerekir). -->
     <EnableWindowsTargeting>true</EnableWindowsTargeting>

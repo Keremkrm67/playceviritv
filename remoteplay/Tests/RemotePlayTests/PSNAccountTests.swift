@@ -60,4 +60,21 @@ final class PSNAccountTests: XCTestCase {
         XCTAssertTrue(url.hasPrefix("https://auth.api.sonyentertainmentnetwork.com/2.0/oauth/authorize?"))
         XCTAssertTrue(url.contains("redirect_uri=https://remoteplay.dl.playstation.net/remoteplay/redirect"))
     }
+
+    func testPastedRedirectIsUnderstood() {
+        let prefix = PSNAccount.redirectPrefix
+        for pasted in ["  \(prefix)?code=AbC123&cid=1  ", "\"\(prefix)?code=AbC123\"", "Adres: \(prefix)?code=AbC123 tamam",
+                       "AbC123", "code=AbC123", "?code=AbC123&cid=1"] {
+            let url = PSNAccount.redirect(fromPasted: pasted)
+            XCTAssertEqual(url.flatMap(PSNAccount.code(fromRedirect:)), "AbC123", pasted)
+        }
+    }
+
+    func testPastedTextWithoutCodeIsRejected() {
+        for pasted in [nil, "", "   ", "https://example.com/redirect?code=AbC123", PSNAccount.redirectPrefix + "?cid=1"] {
+            XCTAssertNil(PSNAccount.redirect(fromPasted: pasted), pasted ?? "nil")
+        }
+        XCTAssertTrue(PSNAccount.looksLikeRedirect(PSNAccount.redirectPrefix + "?code=x1"))
+        XCTAssertFalse(PSNAccount.looksLikeRedirect("x1"))
+    }
 }

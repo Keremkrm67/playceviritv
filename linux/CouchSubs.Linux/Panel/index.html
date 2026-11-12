@@ -1,12 +1,12 @@
 <!doctype html>
 <!-- SPDX-License-Identifier: AGPL-3.0-only -->
-<!-- CouchSubs Linux paneli: kurulum sihirbazı ve çeviri denetimi. Renk ve ölçüler design/tokens.json ile aynıdır
+<!-- PlayCeviri TV Linux paneli: kurulum sihirbazı ve çeviri denetimi. Renk ve ölçüler design/tokens.json ile aynıdır
      (docs/TASARIM.md): tek vurgu rengi, sakin zemin, süs yok. Bağımlılığı yoktur; durum /api/state'ten okunur. -->
 <html lang="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CouchSubs</title>
+<title>PlayCeviri TV</title>
 <link rel="icon" href="/logo.svg">
 <style>
   :root {
@@ -73,7 +73,7 @@
 <main>
   <header>
     <img src="/logo.svg" alt="">
-    <span class="name">CouchSubs</span>
+    <span class="name">PlayCeviri TV</span>
     <span class="meta" id="meta"></span>
   </header>
   <div id="view" aria-live="polite"></div>
@@ -118,15 +118,15 @@ function wizard(s) {
   switch (s.step) {
     case 'Welcome':
       body = '<h1>' + t('PS5 oyunlarına Türkçe altyazı', 'Subtitles for your PS5 games') + '</h1>' +
-        '<p>' + t('CouchSubs oyundaki altyazıyı okur, çevirir ve TV\'de oyunun üstünde gösterir. Kurulum birkaç dakika sürer.',
-                  'CouchSubs reads the in-game subtitles, translates them and shows them on your TV on top of the game. Setup takes a few minutes.') + '</p>' +
+        '<p>' + t('PlayCeviri TV oyundaki altyazıyı okur, çevirir ve TV\'de oyunun üstünde gösterir. Kurulum birkaç dakika sürer.',
+                  'PlayCeviri TV reads the in-game subtitles, translates them and shows them on your TV on top of the game. Setup takes a few minutes.') + '</p>' +
         '<div class="card"><p>' + t('Aynı ağda PS5, desteklenen bir TV ve ikinci bir PSN hesabı gerekir.', 'You need a PS5, a supported TV on the same network and a second PSN account.') + '</p></div>' +
         health(s);
       break;
     case 'SecondAccount':
       body = '<h1>' + t('İkinci PSN hesabı', 'Second PSN account') + '</h1>' +
-        '<p>' + t('Kendi hesabınızla bağlanılırsa PS5 kolunuzu kapatır. Bu yüzden CouchSubs PS5\'e ikinci bir hesapla bağlanır; oyununuz kesilmez.',
-                  'If CouchSubs connected with your own account the PS5 would turn off your controller. So it connects with a second account and your game is not interrupted.') + '</p>' +
+        '<p>' + t('Kendi hesabınızla bağlanılırsa PS5 kolunuzu kapatır. Bu yüzden PlayCeviri TV PS5\'e ikinci bir hesapla bağlanır; oyununuz kesilmez.',
+                  'If PlayCeviri TV connected with your own account the PS5 would turn off your controller. So it connects with a second account and your game is not interrupted.') + '</p>' +
         '<div class="card"><ol>' +
         '<li>' + t('PS5\'te yeni bir kullanıcı ekleyin ve ücretsiz yeni bir PSN hesabı açın.', 'Add a new user on the PS5 and create a free new PSN account.') + '</li>' +
         '<li>' + t('O kullanıcıyla: Ayarlar › Sistem › Uzaktan Oynatma › Uzaktan Oynatmayı Etkinleştir.', 'As that user: Settings › System › Remote Play › Enable Remote Play.') + '</li>' +
@@ -137,6 +137,7 @@ function wizard(s) {
         '<p>' + t('İkinci hesapla Sony\'nin sayfasında giriş yapın. Parolanız yalnız Sony\'ye gider.', 'Sign in with the second account on Sony\'s page. Your password goes only to Sony.') + '</p>' +
         '<div class="card"><ol>' +
         '<li><a class="button primary" target="_blank" rel="noopener" href="' + esc(s.psnLoginUrl) + '">' + t('Sony giriş sayfasını aç', 'Open Sony sign-in') + '</a></li>' +
+        '<li>' + t('Tarayıcınızda kendi PSN hesabınız açıksa sayfayı gizli (incognito) pencerede açın.', 'If your browser is signed in to your own PSN account, open the page in a private (incognito) window.') + '</li>' +
         '<li>' + t('Giriş bitince boş ya da "redirect" yazan bir sayfa açılır. O sayfanın adres çubuğundaki adresin tamamını kopyalayın.',
                    'After signing in you land on an empty or "redirect" page. Copy the whole address from that page\'s address bar.') + '</li>' +
         '<li>' + t('Adresi aşağıya yapıştırın.', 'Paste the address below.') + '</li></ol>' +
@@ -180,8 +181,8 @@ function wizard(s) {
       break;
     case 'Test':
       body = '<h1>' + t('Deneme', 'Test') + '</h1>' +
-        '<p>' + t('TV\'de CouchSubs uygulaması açıkken deneme altyazısı gönderin. Oyunun üstünde görünmeli.',
-                  'With the CouchSubs app open on the TV, send a test subtitle. It should appear on top of the game.') + '</p>' +
+        '<p>' + t('TV\'de PlayCeviri TV uygulaması açıkken deneme altyazısı gönderin. Oyunun üstünde görünmeli.',
+                  'With the PlayCeviri TV app open on the TV, send a test subtitle. It should appear on top of the game.') + '</p>' +
         '<div class="card">' + statusRow(t('TV', 'TV'), s.tvStatus) +
         '<div class="row" style="margin-top:12px">' + btn('test', t('Deneme altyazısı gönder', 'Send a test subtitle'), 'primary') + '</div>' + err('test') + '</div>';
       break;

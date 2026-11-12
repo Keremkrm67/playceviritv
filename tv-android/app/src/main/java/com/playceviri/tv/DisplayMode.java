@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-only
-package com.couchsubs.tv;
+package com.playceviri.tv;
 
 import java.util.Locale;
 
@@ -7,7 +7,7 @@ import java.util.Locale;
  * Görüntü modu: HDMI CouchSubs'ın içinde mi gösterilir, yoksa TV kendi giriş ekranında gösterir ve altyazı onun üstündeki
  * şeffaf pencerede mi durur ("katman"). Bazı TV'lerde (TCL ve diğer bazı Android TV / Google TV'ler) uygulamanın içinde
  * HDMI görüntüsü siyah kalıyor; katman modu bunu çözer. Seçim bilgisayardaki Ayarlar › TV'de bölümünden gelir
- * (style olayının displayMode alanı) ya da elle: adb shell am start -n com.couchsubs.tv/.MainActivity --es displayMode overlay
+ * (style olayının displayMode alanı) ya da elle: adb shell am start -n com.playceviri.tv/.MainActivity --es displayMode overlay
  *
  * Buradaki kararlar Android'e bağlı değildir; JVM birim testleriyle denenir (bkz. DisplayModeTest).
  */

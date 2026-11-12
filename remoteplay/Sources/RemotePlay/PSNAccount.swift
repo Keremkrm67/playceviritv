@@ -36,7 +36,7 @@ public enum PSNAccount {
         return URLSession(configuration: configuration)
     }()
 
-    /// Uygulama içi tarayıcıda açılacak Sony giriş sayfası.
+    /// Sony giriş sayfası: sistem tarayıcısında (varsayılan) ya da uygulama içi pencerede açılır.
     public static let authorizeURL: URL = {
         var components = URLComponents(string: "https://auth.api.sonyentertainmentnetwork.com/2.0/oauth/authorize")!
         components.queryItems = [
@@ -60,6 +60,31 @@ public enum PSNAccount {
     public static func code(fromRedirect url: URL) -> String? {
         guard url.absoluteString.hasPrefix(redirectPrefix) else { return nil }
         return URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?.first { $0.name == "code" }?.value
+    }
+
+    /// Tarayıcıdan kopyalanıp yapıştırılan metinden yönlendirme adresi (Windows'taki RedirectFromPasted). Kullanıcı adresin
+    /// tamamını, boşluk/tırnakla, metnin içinde ya da yalnız "code=..." kısmını yapıştırabilir. Kod da Sony hatası da yoksa nil.
+    public static func redirect(fromPasted pasted: String?) -> URL? {
+        guard var text = pasted?.trimmingCharacters(in: .whitespacesAndNewlines), !text.isEmpty else { return nil }
+        text = text.trimmingCharacters(in: CharacterSet(charactersIn: "\"'<>"))
+        if let range = text.range(of: redirectPrefix, options: .caseInsensitive) {
+            let rest = text[range.upperBound...].prefix { !$0.isWhitespace && !"\"'<>".contains($0) }
+            text = redirectPrefix + rest
+        } else if text.contains("://") {
+            return nil
+        } else {
+            while text.hasPrefix("?") { text.removeFirst() }
+            text = "\(redirectPrefix)?\(text.contains("=") ? text : "code=" + text)"
+        }
+        guard let url = URL(string: text) else { return nil }
+        if let code = code(fromRedirect: url), !code.isEmpty { return url }
+        return error(fromRedirect: url) != nil ? url : nil
+    }
+
+    /// Panoda Sony'nin yönlendirme adresi var mı; giriş adımı bunu kendiliğinden doldurur.
+    public static func looksLikeRedirect(_ text: String?) -> Bool {
+        guard let text, text.range(of: redirectPrefix, options: .caseInsensitive) != nil else { return false }
+        return redirect(fromPasted: text) != nil
     }
 
     /// Sony girişi tamamlamadıysa yönlendirmedeki hata ("access_denied: ... (4002)"); yoksa nil.

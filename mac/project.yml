@@ -62,7 +62,7 @@ targets:
     info:
       path: CouchSubs/Info.plist
       properties:
-        CFBundleDisplayName: CouchSubs
+        CFBundleDisplayName: PlayCeviri TV
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         LSApplicationCategoryType: public.app-category.utilities
@@ -135,7 +135,7 @@ targets:
     info:
       path: AppStore/Info.plist
       properties:
-        CFBundleDisplayName: CouchSubs
+        CFBundleDisplayName: PlayCeviri TV
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         LSApplicationCategoryType: public.app-category.utilities

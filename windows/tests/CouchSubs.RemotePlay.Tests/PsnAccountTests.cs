@@ -141,4 +141,38 @@ public class PsnAccountTests
         Assert.Equal(PsnLoginFailure.NoCode, none.Failure);
         Assert.Empty(sony.Requests);
     }
+
+    [Theory]
+    [InlineData("  https://remoteplay.dl.playstation.net/remoteplay/redirect?code=AbC123&cid=1  ")]
+    [InlineData("\"https://remoteplay.dl.playstation.net/remoteplay/redirect?code=AbC123&cid=1\"")]
+    [InlineData("Adres: https://remoteplay.dl.playstation.net/remoteplay/redirect?code=AbC123 tamam")]
+    [InlineData("AbC123")]
+    [InlineData("code=AbC123")]
+    [InlineData("?code=AbC123&cid=1")]
+    public void PastedRedirectIsUnderstood(string pasted) =>
+        Assert.Equal("AbC123", PsnAccount.CodeFromRedirect(PsnAccount.RedirectFromPasted(pasted)!));
+
+    [Theory]
+    [InlineData(null)]
+    [InlineData("")]
+    [InlineData("   ")]
+    [InlineData("https://example.com/redirect?code=AbC123")]
+    [InlineData("https://remoteplay.dl.playstation.net/remoteplay/redirect?cid=1")]
+    public void PastedTextWithoutCodeIsRejected(string? pasted) => Assert.Null(PsnAccount.RedirectFromPasted(pasted));
+
+    [Fact]
+    public void PastedSonyErrorIsKeptSoItCanBeShown()
+    {
+        var uri = PsnAccount.RedirectFromPasted(PsnAccount.RedirectPrefix + "?error=access_denied&error_description=denied");
+        Assert.NotNull(uri);
+        Assert.StartsWith("access_denied", PsnAccount.ErrorFromRedirect(uri!));
+    }
+
+    [Fact]
+    public void ClipboardDetectionNeedsSonyAddress()
+    {
+        Assert.True(PsnAccount.LooksLikeRedirect(PsnAccount.RedirectPrefix + "?code=x1"));
+        Assert.False(PsnAccount.LooksLikeRedirect("x1"));
+        Assert.False(PsnAccount.LooksLikeRedirect(null));
+    }
 }
